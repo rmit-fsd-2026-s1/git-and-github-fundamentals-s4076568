@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Week 1 Registration Form</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <form id="registerForm" class="form-card">
+      <h1>Create Account</h1>
+      <p class="subtitle">Sign up with your details below</p>
+
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" placeholder="Enter your username" />
+      <small class="error" id="usernameError"></small>
+
+      <label for="email">Email</label>
+      <input type="text" id="email" name="email" placeholder="Enter your email" />
+      <small class="error" id="emailError"></small>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" placeholder="Enter your password" />
+      <small class="error" id="passwordError"></small>
+
+      <label for="confirmPassword">Confirm Password</label>
+      <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Re-enter your password" />
+      <small class="error" id="confirmPasswordError"></small>
+
+      <div class="checkbox-row">
+        <input type="checkbox" id="showPassword" />
+        <label for="showPassword">Show password</label>
+      </div>
+
+      <button type="submit">Sign Up</button>
+
+      <p class="success" id="successMessage"></p>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
